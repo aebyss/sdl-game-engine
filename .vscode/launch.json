@@ -1,0 +1,37 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "(Windows) Launch",
+      "type": "cppvsdbg",
+      "request": "launch",
+      "program": "E:\\C_Game_Engine\\mygame.exe",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "E:\\C_Game_Engine",
+      "environment": [],
+      "externalConsole": false,
+      "preLaunchTask": "build",
+      "internalConsoleOptions": "openOnSessionStart"
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": "e:/C_Game_Engine/engine/src",
+      "program": "e:/C_Game_Engine/engine/src/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}

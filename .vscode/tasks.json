@@ -1,0 +1,27 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "cl",
+            "args": [
+                "/Zi",
+                // "/I", "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\include"
+                "/I", "E:\\game_workspace\\include",  // Adjust path if necessary
+                "E:\\game_workspace\\engine\\src\\glad.c",
+                "E:\\game_workspace\\engine\\src\\main.c",
+                "/link",
+                "E:\\game_workspace\\lib\\SDL2main.lib",
+                "E:\\game_workspace\\lib\\SDL2.lib",
+                "E:\\game_workspace\\lib\\freetype.lib",
+                "/OUT:E:\\game_workspace\\mygame.exe"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$msCompile"]
+        }
+    ]
+}
